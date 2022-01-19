@@ -26,10 +26,38 @@ class Data {
         }
     ]
 
+    private _DataSubObject = [
+        {
+            id: 1,
+            nome: "Joao Vitor Lima Reis",
+            endereco: {
+                rua: "Jose thiago da silva",
+                bairro: "Nova Gameleira",
+                cidade: "Belo Horizonte",
+                estado: "Minas Gerais",
+                cep: "30510-150",
+            }
+        },
+        {
+            id: 2,
+            nome: "Gislane Santos Lima Reis",
+            endereco: {
+                rua: "Jose thiago da silva",
+                bairro: "Nova Gameleira",
+                cidade: "Belo Horizonte",
+                estado: "Minas Gerais",
+                cep: "305310-350",
+            }
+        }
+    ]
 
 
     get getDataArray() {
         return this._DataArray;
+    }
+
+    get getDataSubObject() {
+        return this._DataSubObject
     }
 
 }
