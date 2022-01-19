@@ -37,8 +37,19 @@ function recursiveSearch(data: Array<Object>, position: number, lengthArray: num
     return recursiveSearch(data, position + 1, lengthArray, match, operator,result, key);
 }
 
-function simpleSeachOperator(data: Array<Object>, match: string, operator: operator, key?:string):null | Array<Object> {
-    if(!data.length) return null; 
+
+/**
+ * @name simpleSeachOperator
+ * @description Busca recursiva em um array de dados buscando por um termo específico podendo passar um 
+ * operador podendo especificar um key específica de um determinado objeto
+ * @param data Object[]
+ * @param match string
+ * @param operator operator
+ * @param key? string
+ * @returns Array
+ */
+function simpleSeachOperator(data: Array<Object>, match: string, operator: operator, key?:string): Array<Object> {
+    if(!data.length) return []; 
 
     const result = recursiveSearch(data, 0, data.length, match, operator, new Array(0), key);
 

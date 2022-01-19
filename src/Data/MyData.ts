@@ -36,6 +36,9 @@ class Data {
                 cidade: "Belo Horizonte",
                 estado: "Minas Gerais",
                 cep: "30510-150",
+                data: {
+                    name: "Linco"
+                }
             }
         },
         {

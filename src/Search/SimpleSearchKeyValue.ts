@@ -25,8 +25,16 @@ function recursiveSearch(data: Array<Object>, position: number, lengthArray: num
     return recursiveSearch(data, position + 1, lengthArray, match,key, result);
 }
 
-function simpleSeachKeyValue(data: Array<Object>, match: string, key: string):null | Array<Object> {
-    if(!data.length) return null; 
+/**
+ * @name simpleSeachKeyValue
+ * @description Busca recursiva em um array de dados buscando por um termo específico e uma key especifica
+ * @param data Object[]
+ * @param match String
+ * @param key String
+ * @returns Object[]
+ */
+function simpleSeachKeyValue(data: Array<Object>, match: string, key: string): Array<Object> {
+    if(!data.length) return []; 
 
     const result = recursiveSearch(data, 0, data.length, match, key, new Array(0));
 
