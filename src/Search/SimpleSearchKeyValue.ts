@@ -4,7 +4,6 @@ function recursiveObject(data: object, match: string, key: string, position: num
 
     const contentObjectReferenceKey = String(data[key]);
 
-
     if(contentObjectReferenceKey.toLocaleLowerCase().includes(match.toLocaleLowerCase())) {
         return data;
     }
