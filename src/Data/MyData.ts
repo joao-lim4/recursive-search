@@ -22,7 +22,7 @@ class Data {
             bairro: "Nova Gameleira",
             cidade: "Belo Horizonte",
             estado: "Minas Gerais",
-            cep: "30530-350",
+            cep: "305310-350",
         }
     ]
 
